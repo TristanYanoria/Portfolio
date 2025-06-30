@@ -19,9 +19,9 @@ root.render(
     <ProfileSection style={{ animationDelay: '0.2s' }} />
     <AboutMe style={{ animationDelay: '0.4s' }} />
     <Skills style={{ animationDelay: '0.6s' }} />
-    <Projects style={{ animationDelay: '0.8s' }} />
-    <Education style={{ animationDelay: '0.9s' }} />
-    <Certificates style={{ animationDelay: '1.0s' }} />
+    <Education style={{ animationDelay: '0.8s' }} />
+    <Certificates style={{ animationDelay: '0.9s' }} />
+    <Projects style={{ animationDelay: '1.0s' }} />
     <Contact style={{ animationDelay: '1.2s' }} />
     <Footer />
   </React.StrictMode>

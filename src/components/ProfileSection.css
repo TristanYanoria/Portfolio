@@ -150,6 +150,89 @@
   letter-spacing: 0.1px;
 }
 
+.profile-title {
+  font-size: 1.13rem;
+  color: #F4ACB7;
+  margin: 0 0 0.3em 0;
+  font-weight: 500;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.profile-detail {
+  font-size: 1.08rem;
+  color: #9D8189;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+
+.profile-accent-bar {
+  width: 60px;
+  height: 5px;
+  background: linear-gradient(90deg, #F4ACB7 0%, #FFCAD4 100%);
+  border-radius: 3px;
+  margin: 10px 0 18px 0;
+  align-self: flex-start;
+}
+
+.profile-dot {
+  color: #9D8189;
+  font-size: 1.2em;
+  margin: 0 0.2em;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced Profile Card Styles */
+.enhanced-profile-card {
+  background: linear-gradient(135deg, #FFE5D9 0%, #D8E2DC 100%);
+  border: 2.5px solid #F4ACB7;
+  box-shadow: 0 12px 36px rgba(244, 172, 183, 0.18), 0 2px 8px #fff2;
+  animation: fadeInUp 1s;
+  position: relative;
+}
+
+.enhanced-profile-image img {
+  box-shadow: 0 4px 24px #F4ACB755, 0 0 0 6px #fff8;
+  transition: box-shadow 0.3s;
+}
+
+.profile-card-hover .enhanced-profile-image img {
+  box-shadow: 0 8px 32px #F4ACB799, 0 0 0 8px #fff8;
+}
+
+/* Responsive tweaks for enhanced card */
+@media (max-width: 700px) {
+  .enhanced-profile-card {
+    padding: 18px 2vw 14px 2vw;
+    max-width: 98vw;
+  }
+  .profile-accent-bar {
+    margin: 8px auto 14px auto;
+    align-self: center;
+  }
+}
+
 @media (max-width: 480px) {
   .profile-card {
     flex-direction: column;
@@ -163,7 +246,12 @@
   .name {
     font-size: 1.3rem;
   }
-  .profile-text {
+  .profile-title, .profile-detail {
     font-size: 0.98rem;
+    text-align: center;
   }
+}
+
+.profile-card, .profile-card * {
+  text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 1px #000;
 }

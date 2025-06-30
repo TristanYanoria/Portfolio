@@ -1,27 +1,53 @@
 .AboutMe {
-  color: #fff;
-  background: #444b5a;
-  padding: 32px 40px;
-  margin: 0 auto 24px auto;
-  border-radius: 16px;
+  color: #9D8189;
+  background: #FFE5D9;
+  padding: 36px 44px;
+  margin: 0 auto 32px auto;
+  border-radius: 18px;
   box-sizing: border-box;
-  max-width: 700px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  max-width: 800px;
+  box-shadow: 0 8px 32px rgba(157,129,137,0.13);
+  border: 1.5px solid #FFCAD4;
 }
 
 .AboutMe h2 {
   text-align: center;
   margin-top: 0;
+  color: #F4ACB7;
+  font-size: 2rem;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  letter-spacing: 0.5px;
 }
 
-.AboutMe p {
+.aboutme-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.aboutme-summary {
+  font-size: 1.13rem;
+  color: #9D8189;
   text-align: justify;
-  margin-bottom: 0;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.aboutme-list {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+  color: #9D8189;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  list-style: disc inside;
 }
 
 @media (max-width: 600px) {
   .AboutMe {
     padding: 18px 8px;
     max-width: 98vw;
+  }
+  .aboutme-summary, .aboutme-list {
+    font-size: 0.98rem;
   }
 }

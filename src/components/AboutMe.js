@@ -4,14 +4,21 @@ function AboutMe(props) {
   return (
     <section className="AboutMe section-card" id="about" {...props}>
       <h2>About Me</h2>
-      <p>
-
-As a student of computer engineering, I have a strong desire to construct and break things correctly. I like working on both software and hardware projects, from developing backend systems to soldering circuits. Whether it's system design, coding, or wiring, I like real and hands-on projects that make concepts come to life. I've built simple robots using microcontrollers like Arduino and Raspberry Pi, often combining sensors, motors, and code to create functional prototypes. I enjoy DIY electronics designing custom PCBs, 3D printing enclosures, and integrating mechanical parts because they let me explore the full stack of engineering, from raw components to working systems.
-
-Lately, I've been diving into data science, exploring how data can drive meaningful insights and decisions. I've been working on projects that involve cleaning datasets, analyzing trends, and building predictive models using tools like Python, Pandas, and scikit-learn. I'm fascinated by how data can be used to solve real-world problems and inform smarter systems. This elective is an exciting opportunity for me to further develop my analytical thinking and apply it to practical, impactful scenarios.
-
-
-      </p>
+      <div className="aboutme-content">
+        <p className="aboutme-summary">
+          I am a passionate Computer Engineering student with a strong foundation in both software and hardware development. My experience spans backend systems, embedded electronics, and hands-on prototyping, allowing me to bridge the gap between code and circuitry. I thrive on building robust solutions, whether it’s designing Frontend Designs, soldering custom PCBs, or integrating sensors and actuators into functional prototypes.
+        </p>
+        <ul className="aboutme-list">
+          <li>Experienced in microcontroller projects (Arduino, Raspberry Pi) and DIY electronics, including PCB design and 3D-printed enclosures.</li>
+          <li>Proficient in Python, C++, and JavaScript, with a focus on system design and automation.</li>
+          <li>Skilled in data science: data cleaning, trend analysis, and predictive modeling using Python, Pandas, and scikit-learn.</li>
+          <li>Enjoys full-stack engineering, from raw components to complete systems.</li>
+          <li>Strong analytical thinker, eager to apply technical knowledge to solve real-world problems and deliver impactful results.</li>
+        </ul>
+        <p className="aboutme-summary">
+          I am always eager to learn, collaborate, and take on new challenges that push the boundaries of technology and innovation.
+        </p>
+      </div>
     </section>
   );
 }

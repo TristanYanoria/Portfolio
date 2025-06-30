@@ -17,11 +17,11 @@ function ProfileSection(props) {
 
   return (
     <section
-      className={`profile-card${isInView ? ' profile-card-hover' : ''}`}
+      className={`profile-card enhanced-profile-card fade-in${isInView ? ' profile-card-hover' : ''}`}
       ref={cardRef}
       {...props}
     >
-      <div className="profile-image">
+      <div className="profile-image enhanced-profile-image">
         <img
           src={profilePic}
           alt="Tristan Von Ceazar Apilado Yanoria"
@@ -29,9 +29,9 @@ function ProfileSection(props) {
       </div>
       <div className="profile-content">
         <h1 className="name">Tristan Von Ceazar Apilado Yanoria</h1>
-        <p className="profile-text">Data Scientist Enthusiast &amp; Frontend Developer</p>
-        <p className="profile-text">Bachelor of Science in Computer Engineering</p>
-        <p className="profile-text">Technological Institute of the Philippines - Manila</p>
+        <p className="profile-title">Aspiring Computer Engineer <span className="profile-dot">•</span> Data Science &amp; Frontend Enthusiast</p>
+        <p className="profile-detail">Bachelor of Science in Computer Engineering</p>
+        <p className="profile-detail">Technological Institute of the Philippines - Manila</p>
       </div>
     </section>
   );
