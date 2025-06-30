@@ -1,0 +1,27 @@
+.AboutMe {
+  color: #fff;
+  background: #444b5a;
+  padding: 32px 40px;
+  margin: 0 auto 24px auto;
+  border-radius: 16px;
+  box-sizing: border-box;
+  max-width: 700px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+.AboutMe h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.AboutMe p {
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .AboutMe {
+    padding: 18px 8px;
+    max-width: 98vw;
+  }
+}

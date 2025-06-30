@@ -1,0 +1,67 @@
+.Projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.Project-card {
+  background: #52586a; /* Changed from #444b5a */
+  color: #fff;
+  border-radius: 12px;
+  padding: 18px 22px;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* <-- Change from flex-start to stretch */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.Project-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  display: block; /* Ensures centering works */
+}
+
+.Project-card p {
+  text-align: justify;
+}
+
+.Project-card a {
+  color: #61dafb;
+  margin-top: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.Project-card a:hover {
+  text-decoration: underline;
+}
+
+.Project-divider {
+  border: none;
+  border-top: 2px solid rgba(100, 220, 255, 0.5);
+  margin: 0.5em auto 1em auto;
+  width: 32px;
+  border-radius: 2px;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .Project-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 95vw;
+    min-height: 120px;
+  }
+}

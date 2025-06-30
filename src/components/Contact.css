@@ -1,0 +1,27 @@
+.Contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Contact-list li a {
+  color: #bc7d34;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.Contact-list li a:hover {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .Contact-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
